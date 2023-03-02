@@ -1,0 +1,29 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Donate">
+  <link rel="prefetch" href="https://politics.raisethemoney.com" slot="links" />
+
+  <header>
+    Thank you for your support! Fundraising is essential to a successful
+    campaign, and we appreciate anything you can chip in to help reach those in
+    our community. Your donation will pay for printing costs, advertising, and
+    more. Anything leftover after the campaign is over will be donated back into
+    the schools.
+  </header>
+  <iframe
+    class="full-bleed"
+    loading="lazy"
+    src="https://politics.raisethemoney.com/en/ariana-martinez-for-benicia-school-board-2023"
+  >
+  </iframe>
+</Layout>
+
+<style>
+  iframe {
+    border: none;
+    width: 100%;
+    height: 1700px;
+  }
+</style>

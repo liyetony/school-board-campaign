@@ -1,0 +1,275 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Ariana for School Board">
+  <section class="cover">
+    <img src="/portrait/headshot-01.webp" />
+    <div class="cover-text">
+      <div class="cover-name">Ariana Martinez</div>
+      <div class="cover-slogan">Thriving Together Toward Student Success</div>
+    </div>
+  </section>
+
+  <section class="summary">
+    <img src="/portrait/headshot-04.webp" />
+    <div class="summary-text">
+      <h1>Meet Ariana Martinez</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Faucibus vitae
+        aliquet nec ullamcorper sit amet. Pulvinar mattis nunc sed blandit
+        libero volutpat sed. Orci eu lobortis elementum nibh tellus molestie.
+        Convallis posuere morbi leo urna molestie at. Parturient montes nascetur
+        ridiculus mus mauris vitae ultricies. Sodales neque sodales ut etiam
+        sit. Neque sodales ut etiam sit amet. Est placerat in egestas erat
+        imperdiet sed euismod nisi. In tellus integer feugiat scelerisque
+        varius. Elementum tempus egestas sed sed. Commodo sed egestas egestas
+        fringilla phasellus faucibus scelerisque eleifend donec. Dolor morbi non
+        arcu risus quis varius quam quisque. Natoque penatibus et magnis dis
+        parturient.
+      </p>
+      <p>
+        Pellentesque adipiscing commodo elit at imperdiet dui. Nisl tincidunt
+        eget nullam non nisi est sit amet. Est velit egestas dui id. Eget nullam
+        non nisi est sit amet facilisis. Fringilla urna porttitor rhoncus dolor
+        purus non. Tellus mauris a diam maecenas sed enim ut sem. Mi quis
+        hendrerit dolor magna. In dictum non consectetur a erat nam at lectus.
+        Ac auctor augue mauris augue neque. Nibh tortor id aliquet lectus proin
+        nibh nisl. Non nisi est sit amet. Cras sed felis eget velit aliquet.
+        Laoreet sit amet cursus sit amet dictum sit amet. Pulvinar elementum
+        integer enim neque volutpat ac. Pharetra diam sit amet nisl suscipit
+        adipiscing. Bibendum arcu vitae elementum curabitur vitae.
+      </p>
+      <a href="/about" class="more">See more</a>
+    </div>
+  </section>
+
+  <section class="priorities full-bleed">
+    <h1>Priorities</h1>
+    <dl>
+      <div class="priority">
+        <dt>Student Wellness</dt>
+        <dd>Supporting students’ mental health</dd>
+      </div>
+      <div class="priority">
+        <dt>Student Success for All</dt>
+        <dd>
+          Appreciating the different strengths of all of our students to
+          generate opportunities for each student to thrive
+        </dd>
+      </div>
+      <div class="priority">
+        <dt>Transparency and Trust</dt>
+        <dd></dd>
+      </div>
+      <div class="priority">
+        <dt>Collaboration and Community</dt>
+        <dd>
+          Leveraging the strengths of our community to find creative solutions
+          together
+        </dd>
+      </div>
+    </dl>
+  </section>
+
+  <section class="endorsements">
+    <h1>Endorsements</h1>
+    <dl>
+      <div class="endorsement">
+        <dt>Bill Dodd</dt>
+        <dd>California State Senator</dd>
+      </div>
+      <div class="endorsement">
+        <dt>Steve Young</dt>
+        <dd>Benicia Mayor</dd>
+      </div>
+      <div class="endorsement">
+        <dt>Terry Scott</dt>
+        <dd>Benicia Vice Mayor</dd>
+      </div>
+      <div class="endorsement">
+        <dt>Kari Birdseye</dt>
+        <dd>Benicia City Council Member</dd>
+      </div>
+      <div class="endorsement">
+        <dt>Monica Brown</dt>
+        <dd>Solano County Board of Supervisor</dd>
+      </div>
+      <div class="endorsement">
+        <dt>Sheri Zada</dt>
+        <dd>Benicia Unified School Board President</dd>
+      </div>
+      <div class="endorsement">
+        <dt>Mark Maselli</dt>
+        <dd>Benicia Unified School Board Member</dd>
+      </div>
+      <div class="endorsement">
+        <dt>Dr. Gethsemane Moss</dt>
+        <dd>Benicia Unified School Board Member</dd>
+      </div>
+      <div class="endorsement">
+        <dt>Andre Stewart</dt>
+        <dd>Former Benicia Unified School Board Member</dd>
+      </div>
+    </dl>
+  </section>
+</Layout>
+
+<style>
+  section {
+    margin-block-end: 4rem;
+  }
+
+  h1 {
+    margin: 0;
+    justify-self: center;
+    font-size: 3rem;
+    font-family: "Oswald", sans-serif;
+  }
+
+  dl {
+    display: grid;
+    padding-block: 2rem;
+    margin: 0;
+  }
+
+  dt {
+    font-size: 1.25rem;
+    font-family: "Oswald", sans-serif;
+  }
+
+  dd {
+    margin: 0;
+  }
+
+  .cover {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template: "stack" 1fr / 1fr;
+  }
+
+  .cover::before {
+    grid-area: stack;
+    content: "";
+    width: 100%;
+    z-index: 1;
+    background: hsla(0deg 0% 0% / 0.125);
+  }
+
+  .cover::after {
+    grid-area: stack;
+    content: "";
+    width: 100%;
+    z-index: 1;
+    background: linear-gradient(
+      180deg,
+      hsla(0deg 0% 0% / 0) 0%,
+      hsla(0deg 0% 0% / 0) 5%,
+      hsla(0deg 0% 0% / 0.08) 65%,
+      hsla(0deg 0% 0% / 0.5) 90%,
+      hsla(0deg 0% 0% / 0.7) 100%
+    );
+  }
+
+  .cover img {
+    grid-area: stack;
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    object-position: top center;
+    max-height: 75vh;
+  }
+
+  .cover-text {
+    grid-area: stack;
+    place-self: center;
+    display: grid;
+    place-items: center;
+    color: white;
+    z-index: 2;
+  }
+
+  .cover-name {
+    font-size: 3.25rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .cover-slogan {
+    font-size: 1.75rem;
+  }
+
+  .summary {
+    display: grid;
+    grid-template:
+      "headshot text" auto
+      / 1.5fr 2fr;
+    gap: 0 4rem;
+  }
+
+  .summary-text {
+    display: grid;
+  }
+
+  .summary img {
+    width: 100%;
+  }
+
+  .summary a.more {
+    font-weight: 500;
+    justify-self: end;
+  }
+
+  .summary a.more:visited {
+    color: var(--🎨teal);
+  }
+
+  .priorities {
+    background: var(--🎨teal);
+    color: var(--🎨teal_text1);
+    gap: 1rem;
+    padding-block: 2rem 6rem;
+  }
+
+  .priorities h1 {
+    color: var(--🎨teal_pop1);
+  }
+
+  .priorities dl {
+    grid-template-columns: repeat(auto-fit, minmax(min(14rem, 100%), 1fr));
+    gap: 1rem;
+  }
+
+  .priorities dt {
+    font-weight: 500;
+    margin-block-end: 1rem;
+  }
+
+  .endorsements {
+    display: grid;
+    gap: 1rem;
+  }
+
+  .endorsements h1 {
+    color: var(--🎨teal);
+    justify-self: center;
+  }
+
+  .endorsements dl {
+    grid-template-columns: repeat(auto-fill, minmax(min(20rem, 100%), 1fr));
+    gap: 2rem;
+  }
+
+  .endorsements dt {
+    font-weight: 500;
+  }
+
+  .endorsements dd {
+    color: var(--🎨page_text2);
+  }
+
+  .endorsement {
+    border-top: 1px solid currentColor;
+  }
+</style>

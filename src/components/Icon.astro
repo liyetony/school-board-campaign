@@ -1,0 +1,16 @@
+---
+export interface Props {
+  href: string;
+  fill?: string;
+  stroke?: string;
+  width?: string;
+  height?: string;
+  class?: string;
+}
+
+const { class: cn, href, fill = "currentColor", stroke } = Astro.props;
+---
+
+<svg class={cn}>
+  <use href={`#${href}`} fill={fill} stroke={stroke}></use>
+</svg>
