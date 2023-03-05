@@ -3,18 +3,74 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Get Involved">
-  <iframe
-    class="full-bleed"
-    loading="lazy"
-    src="https://forms.gle/JmovJkNgUTfnAQwJ7"
-  >
-  </iframe>
+  <section id="vote">
+    <h1>Vote</h1>
+    <div class="map">
+      <img src="" alt="Trustee Area 5" />
+    </div>
+    <p>
+      March 27th is is the last day to register or update your voter
+      registration in this special election
+    </p>
+    <a href="https://registertovote.ca.gov/">Register to Vote</a>
+  </section>
+
+  <section id="volunteer">
+    <h1>Volunteer</h1>
+    <form name="volunteer" data-netlify="true">
+      <fieldset>
+        <legend>Contact Details</legend>
+        <label>
+          <span>Email</span>
+          <input type="email" />
+        </label>
+
+        <label>
+          <span>Name</span>
+          <input type="text" />
+        </label>
+
+        <label>
+          <span>Phone</span>
+          <input type="tel" />
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>What Volunteer opportunities are you intereseted in?</legend>
+        <label>
+          <input type="checkbox" />
+          <span>Share information with friends and neighbors</span>
+        </label>
+
+        <label>
+          <input type="checkbox" />
+          <span>Host a meet-and-greet</span>
+        </label>
+
+        <label>
+          <input type="checkbox" />
+          <span>I'm not sure, but I'm still interested in helping</span>
+        </label>
+
+        <label>
+          <input type="checkbox" />
+          <span>Display a yard sign</span>
+        </label>
+
+        <input type="text" placeholder="Address" />
+
+        <label>
+          <input type="checkbox" readonly />
+          <span>Other</span>
+        </label>
+
+        <input type="text" />
+      </fieldset>
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
 </Layout>
 
-<style>
-  iframe {
-    border: none;
-    width: 100%;
-    height: 2100px;
-  }
-</style>
+<style></style>
